@@ -4,8 +4,8 @@ GO
 
 create procedure [dbo].[exp_EmailOutput] (
 	@export_query varchar(max), 
-	@export_title varchar(max) = 'MSA Report',
-	@export_caption varchar(max) = 'MSA Report - Produced By SQL Server',
+	@export_title varchar(max) = 'Report',
+	@export_caption varchar(max) = 'Report - Produced By SQL Server',
 	@export_subtext_one varchar(max) = '',
 	@export_subtext_two varchar(max) = '',
 	@export_subtext_three varchar(max) = '',
@@ -28,11 +28,11 @@ create procedure [dbo].[exp_EmailOutput] (
 
 set nocount on;
 
-if (@mailserver_host is null) set @mailserver_host = 'za-smtp-outbound-1.mimecast.co.za'
-if (@mailserver_user is null) set @mailserver_user = 'rand@marketsa.co.za'
-if (@mailserver_pass is null) set @mailserver_pass = '627ran!!'
-if (@mailserver_reply is null) set @mailserver_reply = 'no-reply@marketsa.co.za'
-if (@mailserver_display is null) set @mailserver_display = 'MSA Data Exports'
+if (@mailserver_host is null) set @mailserver_host = 'smtp.server.com'
+if (@mailserver_user is null) set @mailserver_user = 'user@server.com'
+if (@mailserver_pass is null) set @mailserver_pass = 'password'
+if (@mailserver_reply is null) set @mailserver_reply = 'no-reply@server.com'
+if (@mailserver_display is null) set @mailserver_display = 'sender_alias'
 if (@mailserver_port is null) set @mailserver_port = 587
 if (@mailserver_ssl is null) set @mailserver_ssl = 1
 

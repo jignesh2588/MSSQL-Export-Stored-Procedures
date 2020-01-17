@@ -4,8 +4,8 @@ GO
 
 create procedure [dbo].[exp_ExportToExcel] 
 (	@query varchar(max), 
-	@title varchar(max) = 'MSA Report',
-	@caption varchar(max) = 'MSA Report - Produced By SQL Server',
+	@title varchar(max) = 'Report',
+	@caption varchar(max) = 'Report - Produced By SQL Server',
 	@subtext_one varchar(max) = '',
 	@subtext_two varchar(max) = '',
 	@subtext_three varchar(max) = '',
