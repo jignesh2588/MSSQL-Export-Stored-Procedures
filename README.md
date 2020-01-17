@@ -4,7 +4,7 @@ Collection of TSQL stored procedures, utilizing various binary executables, that
 ## Getting Started
 
 1. Execute each of the scripts in the 'scripts' directory on the desired database.
-2. Place the binary for wkhtmlpdf/pdftk/csv2xlsx in any directory included in your PATH variable.
+2. Place the binary for [wkhtmlpdf](https://wkhtmltopdf.org/)/[pdftk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)/[csv2xlsx](https://gitlab.com/DerLinkshaender/csv2xlsx) in any directory included in your PATH variable.
 3. If neccesary, uncomment the code at the start of 'exp_CheckDependencies.sql' in order to set the correct configurations for the SQL Server instance.
 4. Modify the configuration properties within each script.
 5. Export some data!
